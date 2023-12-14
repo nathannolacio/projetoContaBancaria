@@ -17,6 +17,7 @@ public class Menu {
 			
 			if(opcao == 9) {
 				System.out.println(Cores.TEXT_WHITE_BOLD_BRIGHT + "BANCO DOS DEVS - Obrigado pela preferência!");
+				sobre();
 				leia.close();
 				System.exit(0);
 			}
@@ -87,6 +88,16 @@ public class Menu {
 		System.out.println("* Entre com a opção desejada:                         *");
 		System.out.println("                                                       "
 							+ Cores.TEXT_RESET);
+	}
+	
+	public static void sobre() {
+		System.out.println();
+		System.out.println(Cores.TEXT_WHITE_BOLD_BRIGHT +
+						   "*******************************************************");
+		System.out.println("* Projeto Desenvolvido por:                           *");
+		System.out.println("* Nathan Nolacio - nathannolacio04@gmail.com          *");
+		System.out.println("* github.com/nathannolacio/projetoContaBancaria       *");
+		System.out.println("*******************************************************");
 	}
 
 }
