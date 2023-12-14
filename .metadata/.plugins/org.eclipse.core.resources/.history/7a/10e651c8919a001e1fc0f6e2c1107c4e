@@ -6,9 +6,5 @@ public class Menu {
 		// TODO Auto-generated method stub
 
 	}
-	
-	public static void abrirMenu() {
-		
-	}
 
 }
