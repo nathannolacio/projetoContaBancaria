@@ -1,7 +1,7 @@
 package conta;
 
 import java.util.Scanner;
-import conta.model.Conta;
+
 import conta.model.ContaCorrente;
 import conta.model.ContaPoupanca;
 import conta.util.Cores;
@@ -9,12 +9,6 @@ import conta.util.Cores;
 public class Menu {
 
 	public static void main(String[] args) {
-		Conta c1 = new Conta(1, 123, 1, "Adriana", 10000.0f);
-		c1.visualizar();
-		c1.sacar(12000.0f);
-		c1.visualizar();
-		c1.depositar(5000.0f);
-		c1.visualizar();
 		
 		ContaCorrente cc1 = new ContaCorrente(2, 123, 1, "Mariana", 15000.0f, 1000.0f);
 		cc1.visualizar();
@@ -46,11 +40,7 @@ public class Menu {
 			
 			switch (opcao) {
 			case 1:
-				System.out.println("Criar Conta\n\n");
-				Conta c = new Conta(1234, 2, 0, "Nathan", 10000.00f );
-				int n = c.getNumero();
-				System.out.println(n);
-				
+				System.out.println("Criar Conta\n\n");	
 				break;
 			case 2:
 				System.out.println("Listar todas as Contas\n\n");
